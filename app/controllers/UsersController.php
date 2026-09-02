@@ -8,6 +8,6 @@ class UsersController extends Controller
         $this->call->model('UsersModel');
         $data['users'] = $this->UsersModel->all();
 
-        $this->call->view('users', $data);
+        $this->call->view('users_view', $data);
     }
 }
